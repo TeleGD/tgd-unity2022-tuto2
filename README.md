@@ -2,12 +2,12 @@
 
 Dans ce deuxième tuto, nous allons voir certains ajouts sur le premier tuto, dont le **déplacement de l'ennemi**, les **triggers** ainsi que les **instanciations d'objets**. Ce code a été fait lors de la séance du 13 octobre 2022.
 
-##Modifications du tuto 1
+## Modifications du tuto 1
 
 Dans le tuto 1 s'était glissé un petit problème concernant la caméra, c'est à dire que lorsque le joueur meurt à cause de la collision avec l'ennemi, le jeu s'arrêtait car la **caméra échouait à accéder à la position du joueur** détruit.
 Ainsi, la simple correction aura été d'inverser les rôles, et de faire **gérer la caméra par le joueur**. Ce petit problème n'est pas embêtant suivant nos tutos, mais il est intéressant d'intervertir les rôles pour bien comprendre comment bien remplacer les instances d'objets (en copiant collant le code de la caméra, il faut changer les objets afin d'avoir le bon calcul du point de vue de l'objet joueur).
 
-##Mouvement ennemi
+## Mouvement ennemi
 
 Concernant l'ennemi immobile, on va lui **ajouter un déplacement**. Dans le code *Ennemy.cs*, j'ai ajouté une variable d'objet "player" qui contient un GameObject. Cette variable servira à stocker dans l'éditeur notre objet joueur afin de pouvoir accéder à ses paramètres tels que la position, dans le code de notre ennemi. 
 
